@@ -4,3 +4,43 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-right: 0.2rem solid black;
+  }
+}
+
+.img-switcher {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+
+  & + & {
+    border-top: 0.2rem solid black;
+  }
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+
+  & img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 1rem - 1rem);
+    height: calc(100% - 1rem - 1rem);
+    object-fit: contain;
+  }
+}
