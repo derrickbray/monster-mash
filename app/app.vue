@@ -32,15 +32,27 @@
     <div class="app__right">
       <div class="main">
         <div class="monster">
-          <img class="monster-img" src="/monsters/body-1.png" alt="" />
-          <img class="monster-img" src="/monsters/mouth-1.png" alt="" />
-          <img class="monster-img" src="/monsters/eyes-1.png" alt="" />
+          <img class="monster-img monster-body" src="/monsters/body-1.png" alt="" />
+          <img class="monster-img monster-mouth" src="/monsters/mouth-1.png" alt="" />
+          <img class="monster-img monster-eyes" src="/monsters/eyes-1.png" alt="" />
         </div>
       </div>
         <div class="monster__results">
-          <div class="results">1</div>
-          <div class="results">2</div>
-          <div class="results">3</div>
+          <div class="monster monster__bottom">
+            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
+            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
+            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+          </div>
+          <div class="monster monster__bottom">
+            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
+            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
+            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+          </div>
+          <div class="monster monster__bottom">
+            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
+            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
+            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+          </div>
         </div>
     </div>
   </div>

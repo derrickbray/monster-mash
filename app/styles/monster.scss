@@ -1,0 +1,31 @@
+.monster {
+  position: relative;
+  flex-grow: 1;
+  max-width: 30%;
+  height: 80vh;
+  margin: auto;
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    height: 25rem;
+    margin: auto;
+    object-fit: contain;
+    border: 0.1rem solid purple;
+  }
+
+  &-body {
+
+  }
+  &-mouth {
+    top: 50%;
+    left: 40%;
+    height: 2rem;
+  }
+  &-eyes {
+    top: 25%;
+    left: 33%;
+    height: 2rem;
+  }
+}
