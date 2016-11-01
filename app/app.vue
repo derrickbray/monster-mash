@@ -5,53 +5,53 @@
       <h1 class="app__left-title">Build Your Monster</h1>
 
       <div class="img-switcher">
-        <button class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('body', - 1)" class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
         <div class="frame">
-          <img src="/monsters/body-1.png" alt="part.title"/>
+          <img :src="'/monsters/' + monsterParts.body[selected.body] + '.png'" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('body', + 1)" class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
       <div class="img-switcher">
-        <button class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('mouth', - 1)" class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
         <div class="frame">
-          <img src="/monsters/mouth-1.png" alt="part.title"/>
+          <img :src="'/monsters/' + monsterParts.mouth[selected.mouth] + '.png'" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('mouth', + 1)" class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
       <div class="img-switcher">
-        <button class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('eyes', - 1)" class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
         <div class="frame">
-          <img src="/monsters/eyes-1.png" alt="part.title"/>
+          <img :src="'/monsters/' + monsterParts.eyes[selected.eyes] + '.png'" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
+        <button @click="updatePart('eyes', + 1)" class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
     </div>
     <div class="app__right">
       <div class="main">
         <div class="monster">
-          <img class="monster-img monster-body" src="/monsters/body-1.png" alt="" />
-          <img class="monster-img monster-mouth" src="/monsters/mouth-1.png" alt="" />
-          <img class="monster-img monster-eyes" src="/monsters/eyes-1.png" alt="" />
+          <img class="monster-img" :src="'/monsters/' + monsterParts.body[selected.body] + '.full.png'" alt="" />
+          <img class="monster-img" :src="'/monsters/' + monsterParts.mouth[selected.mouth] + '.full.png'" alt="" />
+          <img class="monster-img" :src="'/monsters/' + monsterParts.eyes[selected.eyes] + '.full.png'" alt="" />
         </div>
       </div>
         <div class="monster__results">
           <div class="monster monster__bottom">
-            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
-            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
-            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
           </div>
           <div class="monster monster__bottom">
-            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
-            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
-            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
           </div>
           <div class="monster monster__bottom">
-            <img class="monster-img monster-body bottom__body" src="/monsters/body-1.png" alt="" />
-            <img class="monster-img monster-mouth bottom__mouth" src="/monsters/mouth-1.png" alt="" />
-            <img class="monster-img monster-eyes bottom__eyes" src="/monsters/eyes-1.png" alt="" />
+            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
           </div>
         </div>
     </div>
@@ -60,19 +60,27 @@
 
 <script>
 import Vue from 'vue';
+import monsterParts from './monster-parts';
 
 export default Vue.extend({
   data() {
     return {
-      getParts: '',
-    }
+      selected: {
+        body: 0,
+        mouth: 0,
+        eyes: 0,
+      },
+      monsterParts,
+    };
   },
 
   mounted: {},
 
 
   methods: {
-
+    updatePart(partName, difference = 1) {
+      this.selected[partName] = (this.selected[partName] + difference) % this.monsterParts[partName].length;
+    }
   }
 });
 </script>
