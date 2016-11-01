@@ -31,9 +31,15 @@
     </div>
     <div class="app__right">
       <div class="monster">
-        <img class="monster__body" src="/monsters/body-1.png" alt="" />
-        <img class="monster__mouth" src="/monsters/mouth-1.png" alt="" />
-        <img class="monster__eyes" src="/monsters/eyes-1.png" alt="" />
+        <div class="monster__body">
+          <img class="monster__body-img" src="/monsters/body-1.png" alt="" />
+        </div>
+        <div class="monster__mouth">
+          <img class="monster__mouth-img" src="/monsters/mouth-1.png" alt="" />
+        </div>
+        <div class="monster__eyes">
+          <img class="monster__eyes-img" src="/monsters/eyes-1.png" alt="" />
+        </div>
       </div>
       <div class="monster__results">
         <div class="results">1</div>
