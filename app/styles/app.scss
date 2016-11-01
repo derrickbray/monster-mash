@@ -13,15 +13,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   // position: relative;
   flex-direction: column;
-  // max-width: 20rem;
+  height: 100vh;
   margin: auto;
+  // max-width: 20rem;
 
   &__body {
     position: absolute;
     top: 86%;
+    height: 170%;
     transform: translate(-50%, -50%);
     object-fit: contain;
-    height: 170%;
 
 
     &-img {
@@ -31,16 +32,18 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   }
 
   &__mouth {
+    display: flex;
     position: absolute;
-    right: 27%;
+    // right: 27%;
     bottom: 25%;
 
     &-img {
-      width: 100%
+      width: 100%;
     }
   }
 
   &__eyes {
+    display: flex;
     position: absolute;
     right: 17%;
     bottom: 50%;
