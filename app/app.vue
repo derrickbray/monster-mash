@@ -37,21 +37,33 @@
           <img class="monster-img" :src="'/monsters/' + monsterParts.eyes[selected.eyes] + '.full.png'" alt="" />
         </div>
       </div>
-        <div class="monster__results">
-          <div class="monster monster__bottom">
-            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+        <div class="monster-results">
+          <div class="monster-results__item">
+            <div class="monster">
+              <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+            </div>
+
+            <h2>Hello Dennis</h2>
           </div>
-          <div class="monster monster__bottom">
-            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+          <div class="monster-results__item">
+            <div class="monster">
+              <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+            </div>
+
+            <h2>Hello Dennis</h2>
           </div>
-          <div class="monster monster__bottom">
-            <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
-            <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+          <div class="monster-results__item">
+            <div class="monster">
+              <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
+              <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
+            </div>
+
+            <h2>Hello Dennis</h2>
           </div>
         </div>
     </div>
