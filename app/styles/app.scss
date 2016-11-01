@@ -9,18 +9,4 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'switchers';
 @import 'layout';
-
-.monster {
-  position: relative;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-  border: 0.2rem solid blue;
-
-  &-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: contain;
-  }
-}
+@import 'monster';
