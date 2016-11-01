@@ -1,0 +1,31 @@
+.img-switcher {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  background: $c-grey;
+
+  & + & {
+    border-top: 0.2rem solid $c-black;
+  }
+}
+
+.btn {
+  padding: 0 0.5rem;
+  border: 0;
+  outline: 0;
+  background: $c-orange;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+
+  & img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 1rem - 1rem);
+    height: calc(100% - 1rem - 1rem);
+    object-fit: contain;
+  }
+}

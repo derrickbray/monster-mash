@@ -2,14 +2,14 @@
   <div class="app">
     <div class="app__left">
 
-      <h1>Build Your Monster</h1>
+      <h1 class="app__left-title">Build Your Monster</h1>
 
       <div class="img-switcher">
         <button class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
         <div class="frame">
           <img src="/monsters/body-1.png" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></button>
+        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
       <div class="img-switcher">
@@ -17,7 +17,7 @@
         <div class="frame">
           <img src="/monsters/mouth-1.png" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></button>
+        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
       <div class="img-switcher">
@@ -25,11 +25,22 @@
         <div class="frame">
           <img src="/monsters/eyes-1.png" alt="part.title"/>
         </div>
-        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></button>
+        <button class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
 
     </div>
-    <div class="app__right"></div>
+    <div class="app__right">
+      <div class="monster">
+        <img class="monster__body" src="/monsters/body-1.png" alt="" />
+        <img class="monster__mouth" src="/monsters/mouth-1.png" alt="" />
+        <img class="monster__eyes" src="/monsters/eyes-1.png" alt="" />
+      </div>
+      <div class="monster__results">
+        <div class="results">1</div>
+        <div class="results">2</div>
+        <div class="results">3</div>
+      </div>
+    </div>
   </div>
 </template>
 
