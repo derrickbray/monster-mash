@@ -30,22 +30,18 @@
 
     </div>
     <div class="app__right">
-      <div class="monster">
-        <div class="monster__body">
-          <img class="monster__body-img" src="/monsters/body-1.png" alt="" />
-        </div>
-        <div class="monster__mouth">
-          <img class="monster__mouth-img" src="/monsters/mouth-1.png" alt="" />
-        </div>
-        <div class="monster__eyes">
-          <img class="monster__eyes-img" src="/monsters/eyes-1.png" alt="" />
+      <div class="main">
+        <div class="monster">
+          <img class="monster-img" src="/monsters/body-1.png" alt="" />
+          <img class="monster-img" src="/monsters/mouth-1.png" alt="" />
+          <img class="monster-img" src="/monsters/eyes-1.png" alt="" />
         </div>
       </div>
-      <div class="monster__results">
-        <div class="results">1</div>
-        <div class="results">2</div>
-        <div class="results">3</div>
-      </div>
+        <div class="monster__results">
+          <div class="results">1</div>
+          <div class="results">2</div>
+          <div class="results">3</div>
+        </div>
     </div>
   </div>
 </template>
