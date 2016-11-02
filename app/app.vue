@@ -27,7 +27,10 @@
         </div>
         <button @click="updatePart('eyes', + 1)" class="btn"><i class="fa fa-caret-right fa-2x" aria-hidden="true"></i></button>
       </div>
-
+      <div class="left-text">
+        <input type="text" class="left-text__input" placeholder="Name Your Creation">
+        <button class="left-text__btn">SAVE FAVORITE</button>
+      </div>
     </div>
     <div class="app__right">
       <div class="main">

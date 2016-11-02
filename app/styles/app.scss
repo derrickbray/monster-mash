@@ -18,6 +18,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    border-right: 0.2rem solid $c-black;
+    border-bottom: 0.2rem solid $c-black;
   }
 }
 
