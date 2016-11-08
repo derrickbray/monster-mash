@@ -47,16 +47,15 @@
               <img class="monster-img" :src="'/monster' + monsterParts.mouth[favorite.mouth] + '.full.png'" alt="" />
               <img class="monster-img" :src="'/monster' + monsterParts.eyes[favorite.eyes] + '.full.png'" alt="" />
             </div>
-
             <h2>{{ favorite.name }}</h2>
           </div>
+
           <div class="monster-results__item">
             <div class="monster">
               <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
               <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
               <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
             </div>
-
             <h2>Hello Dennis</h2>
           </div>
           <div class="monster-results__item">
@@ -65,8 +64,8 @@
               <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
               <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
             </div>
-
             <h2>Hello Dennis</h2>
+
           </div>
         </div>
     </div>
@@ -129,8 +128,6 @@ export default Vue.extend({
           };
         });
     },
-
-
   },
 });
 </script>
