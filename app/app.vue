@@ -32,7 +32,9 @@
         <button class="left-text__btn">SAVE FAVORITE</button>
       </form>
     </div>
+
     <div class="app__right">
+
       <div class="main">
         <div class="monster">
           <img class="monster-img" :src="'/monsters/' + monsterParts.body[selected.body] + '.full.png'" alt="" />
@@ -40,34 +42,18 @@
           <img class="monster-img" :src="'/monsters/' + monsterParts.eyes[selected.eyes] + '.full.png'" alt="" />
         </div>
       </div>
+
         <div class="monster-results">
           <div class="monster-results__item" v-for="favorite in favorites">
             <div class="monster">
-              <img class="monster-img" :src="'/monster' + monsterParts.body[favorite.body] + '.full.png'" alt="" />
-              <img class="monster-img" :src="'/monster' + monsterParts.mouth[favorite.mouth] + '.full.png'" alt="" />
-              <img class="monster-img" :src="'/monster' + monsterParts.eyes[favorite.eyes] + '.full.png'" alt="" />
+              <img class="monster-img" :src="'/monsters/' + monsterParts.body[favorite.body] + '.full.png'" alt="" />
+              <img class="monster-img" :src="'/monsters/' + monsterParts.mouth[favorite.mouth] + '.full.png'" alt="" />
+              <img class="monster-img" :src="'/monsters/' + monsterParts.eyes[favorite.eyes] + '.full.png'" alt="" />
             </div>
-            <h2>{{ favorite.name }}</h2>
-          </div>
-
-          <div class="monster-results__item">
-            <div class="monster">
-              <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
-              <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
-              <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
-            </div>
-            <h2>Hello Dennis</h2>
-          </div>
-          <div class="monster-results__item">
-            <div class="monster">
-              <img class="monster-img" src="/monsters/body-1.full.png" alt="" />
-              <img class="monster-img" src="/monsters/mouth-1.full.png" alt="" />
-              <img class="monster-img" src="/monsters/eyes-1.full.png" alt="" />
-            </div>
-            <h2>Hello Dennis</h2>
-
+            <h2 class="favorite__text">{{ favorite.name }}</h2>
           </div>
         </div>
+
     </div>
   </div>
 </template>
@@ -98,7 +84,7 @@ export default Vue.extend({
   methods: {
 
     getFavorites() {
-      fetch('http:tiny-tn.herokuapp.com/collections/db-monsters')
+      fetch('http://tiny-tn.herokuapp.com/collections/db-monsters')
         .then((r) => r.json())
         .then((favorites) => {
           this.favorites = favorites;
@@ -110,7 +96,7 @@ export default Vue.extend({
     },
 
     saveMonster() {
-      fetch(`http:tiny-tn.herokuapp.com/collections/db-monsters`, {
+      fetch('http://tiny-tn.herokuapp.com/collections/db-monsters', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -118,7 +104,7 @@ export default Vue.extend({
           body: JSON.stringify(this.selected)
         })
         .then((r) => r.json())
-        .then((favorites) => {
+        .then((favorite) => {
           this.favorites = [favorite, ...this.favorites];
           this.selected = {
             name: '',
