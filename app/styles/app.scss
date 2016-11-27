@@ -16,6 +16,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
   &__item {
     display: flex;
+    flex-basis: calc(100% / 3);
     flex-direction: column;
     flex-grow: 1;
     border-right: 0.2rem solid $c-black;
