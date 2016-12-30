@@ -2,7 +2,7 @@
   <div class="app">
     <div class="app__left">
 
-      <h1 class="app__left-title">Build Your Monster</h1>
+      <h1 class="app__left-title">You Found the Monster Maker</h1>
 
       <div class="img-switcher">
         <button @click="updatePart('body', - 1)" class="btn"><i class="fa fa-caret-left fa-2x" aria-hidden="true"></i></button>
