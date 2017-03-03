@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  height: 100vh;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-right: 0.2rem solid $c-black;
+
+    &-title {
+      margin: 0;
+      background: $c-black;
+      color: $c-orange;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: $c-grey;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-right: 0.2rem solid $c-black;
+}

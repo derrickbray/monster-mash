@@ -1,6 +1,33 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
+$c-grey: #374140;
+$c-orange: #dc7937;
+$c-black: #000;
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'switchers';
+@import 'layout';
+@import 'monster';
+
+.monster-results {
+  display: flex;
+
+  &__item {
+    display: flex;
+    flex-basis: calc(100% / 3);
+    flex-direction: column;
+    flex-grow: 1;
+    border-right: 0.2rem solid $c-black;
+    border-bottom: 0.2rem solid $c-black;
+  }
+}
+
+.monster__bottom {
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
+  height: 8rem;
+  margin: 0;
+  // border: 0.1rem solid green;
+}

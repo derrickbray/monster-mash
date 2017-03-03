@@ -1,0 +1,35 @@
+.monster {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 5rem;
+  margin: auto;
+  border-top: 0.2rem solid $c-black;
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+  }
+
+  &-mouth {
+    top: 50%;
+    left: 40%;
+    height: 2rem;
+  }
+  &-eyes {
+    top: 25%;
+    left: 33%;
+    height: 2rem;
+  }
+}
+
+.favorite__text {
+  color: $c-orange;
+  text-align: center;
+}
